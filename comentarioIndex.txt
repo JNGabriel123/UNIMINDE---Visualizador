@@ -1,0 +1,13 @@
+<div>
+            <section class="intro">
+                <h2>Você quer mudar, mas não sabe como?</h2>
+                <p>Aqui você encontrará métodos práticos para vencer vícios, melhorar hábitos e transformar sua mentalidade.</p>
+                <button class="btn" onclick="toggleContent()">Saiba Mais</button>
+
+                <!-- Informar conteúdo que será exibido ao clicar em "saiba mais" -->
+                <div id="hiddenContent" class="content hidden">
+                    <h2><b>imlementação de conteudo</b></h2>
+                    <p>Conteudo para o site</p>
+                </div>
+            </section>
+        </div>

@@ -1,0 +1,227 @@
+@media (max-width: 480px) and (min-height: 20px) {
+    body{
+        font-size: 14px;
+        gap: 0;
+    }
+
+    header {
+        background: #292929;
+        color: white;
+        gap: 1px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header nav, .menu{
+        gap: 55px;
+        font-size: 15px;
+    }
+
+    .btn_menu {
+        width: 50px;
+        height: 50px;
+        all: unset;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 27px;
+        border-radius: 50%;
+        border: none;
+        z-index: 1001;
+        background-color: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        width: 150px;
+        height: 100%;
+        background: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    header, .image {
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo_text{
+        width: 35%;
+        height: 60%;
+        margin: 5px;
+    }
+
+    .logo_text_mobile{
+        height: 55px;
+        margin: 5px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s;
+        top: 800px;
+    }
+    
+    .menu a:hover {
+        font-size: 15px;
+    }
+
+    .menu.open {
+        left: 0;
+      }
+    
+    
+
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    body{
+        font-size: 14px;
+        gap: 0;
+    }
+
+    header {
+        background: #292929;
+        color: white;
+        padding-top: 1px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header nav, .menu{
+        gap: 55px;
+        font-size: 15px;
+    }
+
+    .btn_menu {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        font-size: 28px;
+        border: none;
+        z-index: 1001;
+        color: white;
+        background: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .menu {
+        position: fixed;
+        left: -250px;
+        top: 0;
+        width: 150px;
+        height: 100%;
+        background: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    header, .image {
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .logo_text{
+        width: 35%;
+        height: 75%;
+        margin: 5px;
+    }
+
+    .logo_text_mobile{
+        height: 55px;
+        margin: 5px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+    
+    .menu a:hover {
+        font-size: 15px;
+    }
+
+    .menu.open {
+        left: 0;
+      }
+}
+
+@media(min-width: 769px) and (max-width: 1023px) {
+
+    .btn_menu {
+        display: none;
+    }
+
+    header nav, .menu {
+        font-size: 15px;
+        gap: 50px;
+        
+    }
+
+    .menu a {
+        transition: 0.2s;
+        font-weight: bold;
+    }
+
+    .menu a:hover {
+        font-size: 16px;
+    }
+
+    .logo_text_mobile {
+        display: none;
+    }
+
+    .logo_text {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .btn_menu {
+        display: none;
+    }
+
+    .logo_text {
+        display: none;
+    }
+
+    .logo_text_mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Aulas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #f0f2f5;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: #1e298b;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
+
+    .aula {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #2e2e42;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .aula:hover {
+      background-color: #3a3a5a;
+    }
+
+    .aula.ativa {
+      background-color: #4f4f7a;
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    iframe {
+      width: 80%;
+      height: 80%;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Aulas</h2>
+    <div class="aula" onclick="trocarVideo('https://www.youtube.com/watch?v=VIDEO_ID1', this)">Aula 01</div>
+    <p class="titlle">A LEI OCULTA DA ATRAÇÃO QUE NINGUÉM QUER QUE VOCÊ SAIBA</p>
+    
+    <div class="aula" onclick="trocarVideo('https://www.youtube.com/embed/9bZkp7q19f0', this)">Aula 02</div>
+    <div class="aula" onclick="trocarVideo('https://www.youtube.com/embed/kJQP7kiw5Fk', this)">Aula 03</div>
+  </div>
+
+  <div class="main">
+    <iframe id="videoPlayer" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    function trocarVideo(url, el) {
+      document.getElementById('videoPlayer').src = url;
+
+      // Remove classe ativa das outras aulas
+      document.querySelectorAll('.aula').forEach(a => a.classList.remove('ativa'));
+      el.classList.add('ativa');
+    }
+  </script>
+
+</body>
+</html>

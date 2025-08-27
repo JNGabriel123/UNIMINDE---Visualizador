@@ -48,3 +48,10 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.michroma-regular {
+	font-family: "Michroma", sans-serif;
+	font-style: normal;
+	font-size: 20px;
+    text-align: center;
+}
